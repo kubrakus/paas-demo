@@ -18,6 +18,8 @@ metadata:
   labels:
     app: nginx
 spec:
+  strategy:
+    type: Recreate
   replicas: 4
   selector:
     matchLabels:
